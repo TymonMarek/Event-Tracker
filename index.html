@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+
+  <title>Events</title>
+</head>
+
+<!-- Event Card -->
+<template class="container" id="eventCard">
+  <h2 class="title" id="eventTitle"> Lorem ipsum, dolor sit amet</h2>
+  <div id="metaData" class="metadata">
+    <span class="meta time" id="eventTime">00/00/00 00:00</span>
+    <span class="meta"> - </span>
+    <span class="meta location" id="eventLocation">Lorem Ipsum</span>
+  </div>
+  <p class="description" id="eventDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+    dolore quia nulla, atque consequatur nisi illum nobis, nemo, enim iure similique debitis? Animi quo dolores ut
+    nostrum, ex odio corporis.</p>
+
+  <button class="button cancel" id="cancelButton">Cancel</button>
+</template>
+
+<body>
+  <!-- Main Content -->
+  <main>
+    <div class="container add-event">
+      <form class="add-event-form" id="addEventForm">
+        <label for="eventName">Event Name</label>
+        <input type="text" name="eventName" id="eventName" placeholder="Party">
+
+        <label for="eventTime">Time</label>
+        <input type="datetime-local" name="eventTime" id="eventTime">
+
+        <label for="eventLocation">Location</label>
+        <input type="text" name="eventLocation" id="eventLocation" placeholder="10 Downing Street">
+
+        <label for="eventDescription">Description</label>
+        <textarea name="eventDescription" id="eventDescription"
+          placeholder="All Conservatives invited, including Boris Johnson!"></textarea>
+
+        <button type="submit" class="button add" id="addButton">Add</button>
+      </form>
+    </div>
+
+    <div class="seperator"></div>
+
+    <div id="eventList"></div>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+/* Defaults */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  width: min(65ch, 100% - 4rem);
+  margin: 2rem auto;
+  margin-inline: auto;
+}
+
+video,
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Divs */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form > * {
+  margin: 0;
+}
+
+form > label {
+  font-weight: light;
+  font-size: 0.85rem;
+  color: #818181;
+}
+
+form > input,
+form > textarea {
+  padding: 0.5rem;
+  border: none;
+  outline: 2px solid #ccc;
+  transition: outline 0.5s;
+  border-radius: 0.5rem;
+  resize: none;
+}
+
+form > input:focus,
+form > textarea:focus {
+  outline: 2px solid #2f69de;
+  transition: outline 0.5s;
+}
+
+form > button {
+  background-color: #2f69de;
+  transition: background-color 0.5s;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+  border: none;
+}
+
+form > button:hover {
+  background-color: #2a5ec7;
+  transition: background-color 0.5s;
+}
+
+form > button.add {
+  color: white;
+}
+
+/* Event card */
+.event > * {
+  margin: 0;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.metadata .meta {
+  font-size: 0.85rem;
+  font-weight: light;
+  color: #818181;
+}
+
+.description {
+  font-size: 1.15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.button {
+  text-decoration: none;
+  font-weight: bold;
+  color: #818181;
+  font-size: 1rem;
+
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.button.cancel {
+  background-color: hsl(0, 65%, 50%);
+  transition: background-color 0.2s;
+  color: white;
+}
+
+.button.cancel:hover {
+  background-color: hsl(0, 65%, 35%);
+  transition: background-color 0.2s;
+}
+
+/* Utility */
+.invalid {
+  outline: 2px solid #ff0000;
+  transition: outline 0.5s;
+}
+
+.seperator {
+  background-color: #ccc;
+  height: 1px;
+  width: 100%;
+  margin: 1rem 0;
+}
